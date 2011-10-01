@@ -2,7 +2,7 @@
 from _Framework.SessionComponent import SessionComponent
 from _Framework.ButtonElement import ButtonElement
 
-class MaschineAble(ControlSurface):
+class MaschinAble(ControlSurface):
 	__module__ = __name__
 	__doc__ = '''Midi Remote Script for Clip launch control on the\n
 Native Instruments Maschine Controller'''

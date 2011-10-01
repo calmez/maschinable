@@ -1,3 +1,3 @@
-﻿from MaschineAble import MaschineAble
+﻿from MaschinAble import MaschinAble
 def create_instance(c_instance):
-	return MaschineAble(c_instance)
+	return MaschinAble(c_instance)
