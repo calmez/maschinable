@@ -51,3 +51,7 @@ Native Instruments Maschine Controller'''
 		all_scenes = self.song().scenes
 		index = list(all_scenes).index(selected_scene)
 		session.set_offsets(session._track_offset, index)
+		
+	def disconnect(self):
+		ControlSurface.disconnect(self)
+		self.log_message("====================== MaschineAble Log closed ======================")
