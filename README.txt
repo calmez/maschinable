@@ -1,0 +1,2 @@
+- for license information see LICESE.txt file
+- for installation description see INSTALL.txt file
