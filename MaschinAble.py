@@ -24,17 +24,20 @@ Native Instruments Maschine Controller'''
 		
 		session.set_offsets(0, 0)
 		
-		launch_notes = [60, 61, 62, 63, 56, 57, 58, 59, 52, 53, 54, 55, 48, 49, 50, 51]
-		
+		launch_notes = range(60,76)
+		current_scene = list(
+			self.song().scenes).index(self.song().view.selected_scene)
+		current_track = list(
+			self.song().tracks).index(self.song().view.selected_track)
 		for scene_index in range(num_scenes):
 			for track_index in range(num_tracks):
-				session.scene(scene_index).clip_slot(track_index).set_launch_button(
+				session.scene(num_scenes - 1 - scene_index + current_scene).clip_slot(track_index + current_track).set_launch_button(
 					ButtonElement(
 						is_momentary, 
 						0, 
-						2, 
+						1, 
 						launch_notes[track_index+(4*scene_index)]))
-						
+					
 	def _on_selected_track_changed(self):
 		ControlSurface._on_selected_track_changed(self)
 		selected_track = self.song().view.selected_track
