@@ -1,9 +1,8 @@
-- Ableschine Controller Template
-- Group H for Launching
-- edited Group H velocities to have full velocity every time
+- copy MaschinAble Controller Template and load w/ controller editor
+- see template for usage details
 
-- copy python files to resources folder of ableton version into "Midi Remote Scripts" (subfolder "MaschinAble")
+- copy python files (__init__.py, MaschinAble.py) to resources folder of ableton version into "Midi Remote Scripts" (subfolder "MaschinAble" - you have to create it)
 
 - in Lives preferences tab "Midi / Sync" choose Maschinable as surface and Maschine Controller In / Out as in- and output devices
 
-- colored frame should appear that shows view port of controller (four times four pads)
+- colored frame should appear that shows view port of controller (four times four pads - represented in group H)
